@@ -9,10 +9,10 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 function OffcanvasExample() {
   return (
     <>
-      {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
+      {['md',].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#"> <h1>Nazmol hoda</h1></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -26,19 +26,19 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav.Link href="#action1">Service</Nav.Link>
+                  <Nav.Link href="#action2">Contact</Nav.Link>
                   <NavDropdown
-                    title="Dropdown"
+                    title="Service"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">Website</NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
-                      Another action
+                      Facebook Pixel
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
-                      Something else here
+                      Facebook Ads
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>

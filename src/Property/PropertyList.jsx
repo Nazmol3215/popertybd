@@ -3,7 +3,7 @@ import "./PropertyList.css";
 import picture from "../Images/poperty.png";
 import picture2 from "../Images/poperty1.png";
 import { useNavigate } from "react-router";
-import CallButton  from "../Components/Common/CallButton";
+import CallButton from "../Components/Common/CallButton";
 
 const PropertyList = () => {
   const navigateTo = useNavigate();
@@ -11,7 +11,7 @@ const PropertyList = () => {
   const properties = [
     {
       id: 1,
-      title: "Buy This 1800 Sq Ft Ready Flat In Bashundhara R/a",
+      title: "Buy This 1800 Sq Ft...",
       location: "Block J, Bashundhara R-A",
       price: "৳15,400,000",
       bedrooms: 3,
@@ -21,7 +21,7 @@ const PropertyList = () => {
     },
     {
       id: 2,
-      title: "A 2200 Sq Ft Residential Apartment Is Up For Sale",
+      title: "A 2200 Sq Ft Residentiale...",
       location: "Block J, Bashundhara R-A",
       price: "৳17,500,000",
       bedrooms: 4,
@@ -31,7 +31,7 @@ const PropertyList = () => {
     },
     {
       id: 3,
-      title: "Covering 1360 Sq Ft Space A Flat Is Up For Sale",
+      title: "Covering 1360 Sq Ft....",
       location: "Block I, Bashundhara R-A",
       price: "৳10,000,000",
       bedrooms: 3,
@@ -41,7 +41,7 @@ const PropertyList = () => {
     },
     {
       id: 3,
-      title: "Covering 1360 Sq Ft Space A Flat Is Up For Sale",
+      title: "Covering 1360 Sq Ft .....",
       location: "Block I, Bashundhara R-A",
       price: "৳10,000,000",
       bedrooms: 3,
@@ -55,7 +55,11 @@ const PropertyList = () => {
     <div className="property-list">
       {properties.map((property) => (
         <div className="property-card" key={property.id}>
-          <img src={property.imgSrc} alt={property.title} className="property-img" />
+          <img
+            src={property.imgSrc}
+            alt={property.title}
+            className="property-img"
+          />
           <div className="property-details">
             <h3>{property.title}</h3>
             <p>{property.location}</p>
@@ -66,9 +70,11 @@ const PropertyList = () => {
               <span>{property.area}</span>
             </div>
             <div className="actions">
-              <button onClick={() => navigateTo("/DetaisPages")}>Details</button>
+              <button onClick={() => navigateTo("/DetaisPages")}>
+                Details
+              </button>
               <button onClick={() => navigateTo("/ContactForm")}>Email</button>
-<CallButton/>
+              <CallButton />
             </div>
           </div>
         </div>

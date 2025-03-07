@@ -36,6 +36,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4">
+          <h4>About Us</h4>
+          <h4>Concut Us</h4>
+          <h4>Help you</h4>
+          <h4>Garden Palace</h4>
           <h1>Garden Palace</h1>
         </div>
       </div>

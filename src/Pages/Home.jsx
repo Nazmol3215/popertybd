@@ -1,7 +1,11 @@
 import React from "react";
 import PropertyList from "../Property/PropertyList";
 import PropertySlider from "../Property/PropertySlider";
-import TrendingAndRecommended from "../DetaisPages/TrendingAndRecommended";
+import OffcanvasExample from "../Layout/OffcanvasExample";
+import Footer from "../Layout/Footer";
+import HorizontalScrollMenu from "../Layout/ScrollHeader";
+
+
 
 
 
@@ -9,10 +13,11 @@ import TrendingAndRecommended from "../DetaisPages/TrendingAndRecommended";
 export default function Home() {
   return (
     <div>
-
+      <OffcanvasExample />
+      <HorizontalScrollMenu />
       <PropertySlider />
-      <TrendingAndRecommended />
       <PropertyList />
+      <Footer />
     </div>
   );
 }
