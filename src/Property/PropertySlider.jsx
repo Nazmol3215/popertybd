@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import picture from '../images/poperty.png';
-import picture2 from '../images/poperty1.png';
+import picture from "../Images/poperty.png";
+import picture2 from "../Images/poperty1.png";
+
+
 
 const propertyData = [
   {

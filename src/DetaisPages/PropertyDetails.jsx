@@ -11,7 +11,8 @@ import { RiParkingBoxLine } from 'react-icons/ri';
 import { HiOutlineCamera } from 'react-icons/hi';
 import { FiUnlock } from 'react-icons/fi';
 import  Details  from './Test1';
-
+import TrendingAndRecommended from './TrendingAndRecommended';
+import Button from "../Components/Common/Button";
 
 
 
@@ -215,6 +216,7 @@ const PropertyDetails = () => {
       >
         <h2>Listings</h2>
         <p>Information about other listings can go here.</p>
+        <TrendingAndRecommended />
       </div>
 
       {/* Location Section */}
@@ -227,8 +229,17 @@ const PropertyDetails = () => {
         }}
       >
         <h2>Location</h2>
+
+        <Button />
         <p>
-          Bashundhara R/A is a prime location with excellent connectivity to top educational institutions like North South University and International School Dhaka. Renowned healthcare facilities, including Evercare Hospital, and popular shopping malls like Jamuna Future Park are nearby, making it an ideal place for families.
+
+          Bashundhara R/A is a prime location with excellent 
+          connectivity to top educational institutions like 
+          North South University and International School Dhaka.
+           Renowned healthcare facilities, including Evercare 
+           Hospital, and popular shopping malls like Jamuna
+            Future Park are nearby, making it an ideal place 
+            for families.
         </p>
       </div>
     </div>
