@@ -21,7 +21,7 @@
 }
 
 .property-img {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
@@ -69,6 +69,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  height: 30px;
 }
 
 .actions button:hover {
