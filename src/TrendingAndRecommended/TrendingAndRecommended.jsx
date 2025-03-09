@@ -28,7 +28,6 @@ import picture21 from "../Images/poperty.png";
 
 
 
-
 const TrendingAndRecommended = () => {
   const navigate = useNavigate();
 

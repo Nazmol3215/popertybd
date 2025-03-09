@@ -11,9 +11,8 @@ import { RiParkingBoxLine } from 'react-icons/ri';
 import { HiOutlineCamera } from 'react-icons/hi';
 import { FiUnlock } from 'react-icons/fi';
 import  Details  from './Test1';
-import TrendingAndRecommended from './TrendingAndRecommended';
 import Button from "../Components/Common/Button";
-
+import TrendingAndRecommended from '../TrendingAndRecommended/TrendingAndRecommended';
 
 
 
