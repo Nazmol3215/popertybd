@@ -1,95 +1,80 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const HorizontalScrollMenu = () => {
-  const menuContainerStyle = {
-    overflowX: 'auto', // অনুভূমিক স্ক্রোলিং সক্রিয় করতে
-    whiteSpace: 'nowrap', // মেনু আইটেমগুলো এক লাইনে রাখতে
-    margin: '10px 0',
+  const liStyle = {
+    border: "2px solid #007bff", // সুন্দর নীল রঙের বর্ডার
+    borderRadius: "8px", // কোণগুলোকে গোল করা
+    padding: "10px 20px", // আরও আরামদায়ক প্যাডিং
+    marginRight: "15px", // প্রতিটি আইটেমের মাঝে পর্যাপ্ত স্পেস
+    backgroundColor: "#f8f9fa", // হালকা গ্রে ব্যাকগ্রাউন্ড
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // সুন্দর বক্স শ্যাডো
+    transition: "transform 0.3s ease", // হোভার করলে সুন্দর ট্রান্সফর্ম
   };
 
-  const menuListStyle = {
-    listStyle: 'none',
-    display: 'flex',
-    padding: 0,
-    margin: 0,
+  const liHoverStyle = {
+    transform: "scale(1.05)", // হোভার করলে একটু বড় দেখাবে
   };
 
-  const menuItemStyle = {
-    padding: '10px 20px',
-    marginRight: '10px',
-    backgroundColor: '#f0f0f0',
-    borderRadius: '5px',
-    border: '2px solid transparent', // বর্ডার এবং প্যাডিং সঠিক রাখতে
-    cursor: 'pointer',
-    transition: 'background-color 0.3s, border 0.3s', // ট্রানজিশন প্রপার্টি
-  };
-
-  const menuItemHoverStyle = {
-    backgroundColor: '#007bff',
-    color: 'white',
-    borderColor: '#007bff', // হোভার করলে বর্ডার কালার পরিবর্তন
-  };
 
   return (
-    <div style={menuContainerStyle}>
-      <ul style={menuListStyle}>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          Home
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          About
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          Services
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          Contact
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          Blog
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          Gallery
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          FAQ
-        </li>
-        <li 
-          style={menuItemStyle} 
-          onMouseEnter={(e) => e.target.style = { ...menuItemStyle, ...menuItemHoverStyle }} 
-          onMouseLeave={(e) => e.target.style = menuItemStyle}
-        >
-          Privacy Policy
-        </li>
-      </ul>
+    <div className="container-fluid">
+      <div className="d-flex overflow-auto">
+        <ul className="list-unstyled d-flex mb-0">
+          
+
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-f">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-d">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-g">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-c">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-i">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-a">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-b">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-j">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-h">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+          <li style={liStyle} className="hover-effect">
+            <Link to="/block-e">Block </Link>
+          </li>
+
+        </ul>
+      </div>
     </div>
   );
 };

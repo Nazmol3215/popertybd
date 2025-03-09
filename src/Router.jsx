@@ -17,6 +17,7 @@ export default function Router() {
       <Route path="/ContactForm" element={<ContactForm />} />
       <Route path="/DetaisPages" element={<DetaisPages />} />
       <Route path="/PropertyLocationMap" element={<PropertyLocationMap />} />
+      
     </Routes>
   </BrowserRouter>
     </>
